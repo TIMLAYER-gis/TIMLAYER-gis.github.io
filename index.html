@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoShine - HeviCarwash | tbs</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-content">
+            <i class="fas fa-car fa-spin"></i>
+            <p>AutoShine Loading...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-car-wash"></i>
+                    <span>AutoShine</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#services" class="nav-link">Layanan</a></li>
+                    <li><a href="#gallery" class="nav-link">Galeri</a></li>
+                    <li><a href="#prices" class="nav-link">Harga</a></li>
+                    <li><a href="#contact" class="nav-link">Pesan</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Cuci Mobil <span class="gradient-text">Premium</span><br>
+                Kilat & Mengkilap
+            </h1>
+            <p class="hero-subtitle">Layanan cuci mobil profesional dengan teknologi steam & coating premium. Ambil jemput gratis!</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-whatsapp"></i> Pesan Sekarang
+                </a>
+                <a href="#gallery" class="btn btn-secondary">Lihat Hasil</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="10000">0</span>
+                    <span>+ Mobil</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="5">0</span>
+                    <span>menit Express</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="500">0</span>
+                    <span>⭐ Rating</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="floating-badge">
+                <i class="fas fa-bolt"></i>
+                <span>Express 15 Menit</span>
+            </div>
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="coba1.mp4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Layanan Unggulan</h2>
+            <div class="services-grid">
+                <div class="service-card" data-animate="fade-up">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-spray-can service-icon"></i>
+                    </div>
+                    <h3>Cuci Express</h3>
+                    <p>Cuci luar + dalam kilat 15 menit dengan snowfoam premium</p>
+                    <div class="service-price">Rp 50.000</div>
+                </div>
+                <div class="service-card featured" data-animate="fade-up">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-fire service-icon"></i>
+                    </div>
+                    <h3>Steam Premium</h3>
+                    <p>Steam cleaning interior + eksterior + coating nano</p>
+                    <div class="service-price">Rp 120.000</div>
+                </div>
+                <div class="service-card" data-animate="fade-up">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-car-battery service-icon"></i>
+                    </div>
+                    <h3>Full Service</h3>
+                    <p>Cuci total + poles + coating + detailing lengkap</p>
+                    <div class="service-price">Rp 250.000</div>
+                </div>
+                <div class="service-card" data-animate="fade-up">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-shipping-fast service-icon"></i>
+                    </div>
+                    <h3>Ambil Jemput</h3>
+                    <p>Gratis ambil jemput radius 15km dari lokasi</p>
+                    <div class="service-price">Gratis</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Hasil Cuci Mobil Kami</h2>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="express">Express</button>
+                <button class="filter-btn" data-filter="steam">Steam</button>
+                <button class="filter-btn" data-filter="full">Full Service</button>
+            </div>
+            <div class="gallery-grid">
+                <!-- Express Gallery -->
+                <div class="gallery-item express" data-category="express">
+                    <img src="carvid (2).jpeg" alt="Cuci Express">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item express" data-category="express">
+                    <video class="gallery-video" loop muted playsinline>
+                        <source src="coba.mp4.mp4" type="video/mp4">
+                    </video>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                
+                <!-- Steam Gallery -->
+                <div class="gallery-item steam" data-category="steam">
+                    <img src="carvid (1).jpeg" alt="Steam Cleaning">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item steam" data-category="steam">
+                    <img src="carvid (2).jpeg" alt="Steam Interior">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <!-- Full Service Gallery -->
+                <div class="gallery-item full" data-category="full">
+                    <img src="carvid (1).jpeg" alt="Full Service">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item full" data-category="full">
+                    <video class="gallery-video" loop muted playsinline>
+                        <source src="coba.mp4.mp4" type="video/mp4">
+                    </video>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                
+                <!-- More Gallery Items -->
+                <div class="gallery-item express" data-category="express">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800" alt="Shine">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item steam" data-category="steam">
+                    <img src="https://images.unsplash.com/photo-1558618047-3c8c76bbb17e?w=800" alt="Detailing">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prices Section -->
+    <section id="prices" class="prices">
+        <div class="container">
+            <h2 class="section-title">Paket Harga</h2>
+            <div class="prices-grid">
+                <div class="price-card" data-animate="fade-up">
+                    <div class="price-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Express</h3>
+                    <div class="price">Rp 50.000</div>
+                    <ul>
+                        <li>Cuci luar snowfoam</li>
+                        <li>Drying microfiber</li>
+                        <li>15 menit selesai</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Pesan Express</a>
+                </div>
+                <div class="price-card featured" data-animate="fade-up">
+                    <div class="featured-badge">⭐ Paling Populer</div>
+                    <div class="price-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Steam Premium</h3>
+                    <div class="price">Rp 120.000</div>
+                    <ul>
+                        <li>Steam interior + eksterior</li>
+                        <li>Coating nano ceramic</li>
+                        <li>45 menit selesai</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Pesan Premium</a>
+                </div>
+                <div class="price-card" data-animate="fade-up">
+                    <div class="price-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>VIP Full Service</h3>
+                    <div class="price">Rp 250.000</div>
+                    <ul>
+                        <li>Cuci total + poles</li>
+                        <li>Coating premium 3 layer</li>
+                        <li>Detailing lengkap 2 jam</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Pesan VIP</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Order Section -->
+    <section id="contact" class="order-section">
+        <div class="container">
+            <h2 class="section-title">Pesan Cuci Mobil</h2>
+            <div class="order-container">
+                <div class="order-info">
+                    <h3><i class="fas fa-info-circle"></i> Info Lokasi</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Lokasi</h4>
+                            <p>Jl. Thamrin No. 88<br>Jakarta Pusat</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Jam Buka</h4>
+                            <p>07:00 - 22:00<br>24/7 Ambil Jemput</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-car"></i>
+                        <div>
+                            <h4>Jenis Mobil</h4>
+                            <p>City Car | SUV | MPV | Sport</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="order-form" id="orderForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Nama Lengkap *" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="No. WhatsApp *" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <select id="service" required>
+                                <option value="">Pilih Paket *</option>
+                                <option value="express" data-price="50000">Express - Rp 50.000</option>
+                                <option value="premium" data-price="120000">Premium - Rp 120.000</option>
+                                <option value="vip" data-price="250000">VIP - Rp 250.000</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="carType" placeholder="Jenis Mobil (opsional)">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="pickupAddress" placeholder="Alamat Penjemputan">
+                        </div>
+                        <div class="form-group">
+                            <input type="datetime-local" id="pickupTime" required>
+                        </div>
+                    </div>
+                    <div class="total-price" id="totalPrice">Total: Rp 0</div>
+                    <button type="submit" class="btn btn-primary full-width">
+                        <i class="fas fa-paper-plane"></i> Kirim Pesanan
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/6281234567890" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Pesan Cuci Mobil</span>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-car-wash"></i>
+                    <span>AutoShine</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#"><i class="fab fa-whatsapp"></i> WA</a>
+                    <a href="#"><i class="fab fa-instagram"></i> IG</a>
+                    <a href="#"><i class="fas fa-phone"></i> Call</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AutoShine. Cuci Mobil Premium Jakarta. Made with 🚗💨</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
